@@ -57,10 +57,3 @@ sensor:
       pv_eday:
         value_template: '{{ states.sensor.sems_portal.attributes.eday }}'
         unit_of_measurement: 'kWh'
-
-# Configure MQTT broker
-mqtt:
-  broker: mosquitto
-  username: !secret hass_mosquitto_username
-  password: !secret hass_mosquitto_password
-  discovery: true
