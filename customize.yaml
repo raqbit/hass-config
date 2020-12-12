@@ -1,0 +1,8 @@
+sensor.pv_outputpower:
+  friendly_name: Zonnepanelen Vermogen
+  icon: mdi:solar-panel
+sensor.pv_temperature:
+  friendly_name: Zonnepanelen Temperatuur
+sensor.pv_eday:
+  friendly_name: Zonnepanelen Opbrengst (Vandaag)
+  icon: mdi:solar-power
