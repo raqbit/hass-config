@@ -1,4 +1,4 @@
-# cloud: {} # Not using cloud service
+cloud: {}
 counter: {}
 # history: {} # Disable history
 input_boolean: {}
