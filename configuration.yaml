@@ -54,11 +54,11 @@ sensor:
   - platform: template
     sensors:
       pv_outputpower:
-        value_template: '{{ states.sensor.sems_portal.attributes.outputpower / 1000 }}'
+        value_template: '{{ states.sensor.solar_inverter.attributes.outputpower / 1000 }}'
         unit_of_measurement: 'kW'
       pv_temperature:
-        value_template: '{{ states.sensor.sems_portal.attributes.tempperature }}'
+        value_template: '{{ states.sensor.solar_inverter.attributes.tempperature }}'
         unit_of_measurement: 'C'
       pv_eday:
-        value_template: '{{ states.sensor.sems_portal.attributes.eday }}'
+        value_template: '{{ states.sensor.solar_inverter.attributes.eday }}'
         unit_of_measurement: 'kWh'
