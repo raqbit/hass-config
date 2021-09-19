@@ -21,6 +21,11 @@ webhook: {}
 # zeroconf: {} # Does not work since not using host networking
 zone: {}
 
+# Honeywell Lyric
+lyric:
+  client_id: !secret lyric_id
+  client_secret: !secret lyric_secret
+
 # Text to speech
 tts:
   - platform: google_translate
