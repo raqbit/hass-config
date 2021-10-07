@@ -21,6 +21,13 @@ webhook: {}
 # zeroconf: {} # Does not work since not using host networking
 zone: {}
 
+# Enable access over reverse proxy
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    # "webproxy" Docker network
+    - 172.18.0.0/16
+
 # Honeywell Lyric
 lyric:
   client_id: !secret lyric_id
