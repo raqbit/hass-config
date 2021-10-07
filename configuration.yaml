@@ -28,6 +28,15 @@ http:
     # "webproxy" Docker network
     - 172.18.0.0/16
 
+google_assistant:
+  project_id: klubod-home-assistant
+  service_account: !include service_account.json
+  report_state: true
+  expose_by_default: false
+  entity_config:
+    light.ledstrip:
+      name: LED strip
+
 # Honeywell Lyric
 lyric:
   client_id: !secret lyric_id
